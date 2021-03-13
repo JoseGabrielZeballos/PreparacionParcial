@@ -9,11 +9,11 @@ namespace APICountry.Models
     public class Currency
     {
         [Key]
-        public string Code { get; set; }
+        public string code { get; set; }
         [Required]
-        public string Name { get; set; } 
+        public string name { get; set; } 
         [Required]
-        [StringLength(5,MinimumLength =1,ErrorMessage ="Ingrese entre 1 a 5 caracteres"   )]
-        public string Symbol { get; set; }
+        [StringLength(5,MinimumLength =1,ErrorMessage ="Ingrese entre 1 a 5 caracteres" )]
+        public string symbol { get; set; }
     }
 }
